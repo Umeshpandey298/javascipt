@@ -60,5 +60,29 @@ console.log(Object.entries(tinderUser)); //convert each key/value in a object in
 
 console.log(tinderUser.hasOwnProperty('isLoggedI'));
 
+const course={
+    coursename:"js in hindi",
+    price:"999",
+    courseInstructor:"umesh",
+}
+
+// console.log(course.courseInstructor)
+
+// const {courseInstructor }= course
+// console.log(courseInstructor)
+
+const {courseInstructor :instructor}= course
+console.log(instructor);
+
+// API
+
+// {
+//     "name":"umesh",
+//     "coursename": "js in hindi",
+//     "price":"free"
+
+// }
+
+
 
 
