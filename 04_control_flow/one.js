@@ -48,3 +48,6 @@ if(userloggedin&&debitcard&&2==3){
     console.log("Allow to buy course");
 }
 
+if (loggedinfromgoogle||loggedinfromemail){
+    console.log("user logged in");   
+}
