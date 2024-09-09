@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html events</title>
+</head>
+<body style="background-color: #414141;">
+    <div>
+        <ul id="image">
+            <li><img width="200px" height="150px"  id="nature" src="https://images.pexels.com/photos/709552/pexels-photo-709552.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="nature"></li>
+            <li><img width="200px" height="150px" id="cute girl" src="https://images.pexels.com/photos/36029/aroni-arsa-children-little.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="cute girl"></li>
+            <li><img width="200px" height="150px" id="bird" src="https://images.pexels.com/photos/1661179/pexels-photo-1661179.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="bird"></li>
+            <li><img width="200px" height="150px" id="love" src="https://images.pexels.com/photos/1767434/pexels-photo-1767434.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="love"></li>
+            <li style="color: aliceblue;"><a href="https://www.google.com/">Google</a></li>
+        </ul>
+    </div>
+ 
+</body>
+<script>
+
+// document.getElementById('nature').onclick=function(){
+//     alert("nature clicked")
+    
+// }
+
+document.getElementById('nature').addEventListener('click',function(){
+    alert("nature clicked")
+})
+
+document.getElementById('love').addEventListener('click',function(){
+    alert("love clicked")
+})
+
+</script>
+</html>
