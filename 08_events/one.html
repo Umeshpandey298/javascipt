@@ -24,13 +24,30 @@
     
 // }
 
-document.getElementById('nature').addEventListener('click',function(){
-    alert("nature clicked")
-})
+// document.getElementById('nature').addEventListener('click',function(){
+//     alert("nature clicked")
+// })
 
-document.getElementById('love').addEventListener('click',function(){
-    alert("love clicked")
-})
+
+
+// type, timestamp, defaultPrevented
+// target, toElement, srcElement, currentTarget,
+// clientX, clientY, screenX, screenY
+// altkey,ctrlkey,shiftkey, keyCode
+
+document.getElementById('love').addEventListener('click',function(e){
+    console.log("clicked inside the ul");  
+},true)
+
+document.getElementById('nature').addEventListener('click',function(e){
+    console.log("nature is clicked");  
+},true)
+
+
+
+
+
+
 
 </script>
 </html>
