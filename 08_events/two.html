@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>chai or code</h1>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    const sayUmesh=function(){
+        console.log("umesh pandey")
+    }
+    const changeText=function(){
+        document.querySelector('h1').innerHTML="Best js series"
+    }
+
+    setTimeout(sayUmesh,1000);
+    const changeMe=setTimeout(changeText,3000)
+
+    document.querySelector('#stop').addEventListener('click',function(){
+        clearTimeout(changeMe)
+        console.log("stoped")
+
+    })
+
+
+    
+
+
+
+
+
+
+ 
+
+</script>
+</html>

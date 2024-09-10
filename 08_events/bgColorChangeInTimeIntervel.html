@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>javascript project</title>
+</head>
+<body>
+  <div class="main">
+    <h1>Start Should change the backgroung color every second</h1>
+  <button id="start">start</button>
+  <button id="stop">Stop</button>
+  </div>
+</body>
+<script>
+  // generate a rendom color
+  let colorGame
+
+  const randomColor=function(){
+    const hex="0123456789ABCDEF"
+    let color="#"
+    for(let i=0;i<6;i++){
+      color+=hex[(Math.floor(Math.random()*16))];
+
+    }
+    return color;
+
+  };
+  const changeBgColor=function(){
+    document.body.style.backgroundColor= randomColor()
+  }
+
+   document.getElementById('start').addEventListener('click', function(){
+    if(!colorGame){
+      colorGame= setInterval(changeBgColor,2000);
+      console.log("the color changing is starting")
+
+    }
+    // colorGame= setInterval(changeBgColor,2000);
+    // console.log("the color changing is starting")
+
+  })
+  document.getElementById('stop').addEventListener('click', function(){
+    clearInterval(colorGame);
+    console.log('the color changing is stoped')
+    colorGame='null'
+
+  })
+
+  // setIntervel(changecolor,2000);
+
+  
+  
+
+</script>
+</html>
