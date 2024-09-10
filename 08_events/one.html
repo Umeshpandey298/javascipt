@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,7 +13,7 @@
             <li><img width="200px" height="150px" id="cute girl" src="https://images.pexels.com/photos/36029/aroni-arsa-children-little.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="cute girl"></li>
             <li><img width="200px" height="150px" id="bird" src="https://images.pexels.com/photos/1661179/pexels-photo-1661179.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="bird"></li>
             <li><img width="200px" height="150px" id="love" src="https://images.pexels.com/photos/1767434/pexels-photo-1767434.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="love"></li>
-            <li style="color: aliceblue;"><a href="https://www.google.com/">Google</a></li>
+            <li style="color: aliceblue;"><a href="https://www.google.com/" id="google">Google</a></li>
         </ul>
     </div>
  
@@ -35,18 +36,33 @@
 // clientX, clientY, screenX, screenY
 // altkey,ctrlkey,shiftkey, keyCode
 
-document.getElementById('love').addEventListener('click',function(e){
-    console.log("clicked inside the ul");  
-},true)
+// document.getElementById('love').addEventListener('click',function(e){
+//     console.log("clicked inside the ul");  
+// },true)
 
-document.getElementById('nature').addEventListener('click',function(e){
-    console.log("nature is clicked");  
-},true)
+// document.getElementById('nature').addEventListener('click',function(e){
+//     console.log("nature is clicked");  
+// },true)
 
+// document.getElementById('google').addEventListener('click',function(e){
+//     console.log("google clicked");
+//     e.preventDefault();
+//     e.stopPropagation();
+// },false)
 
+document.querySelector('#image').addEventListener('click',function(e){
+    console.log(e.target.tagName);
+    if(e.target.tagName ==='IMG'){
+        console.log(e.target.id)
+        let removeIt=e.target.parentNode
+        removeIt.remove();
+    }
+    
+    // let removeIt=e.target.parentNode
+    // removeIt.remove()
+    // // removeIt.parentNode.removeChild(removeIt)
 
-
-
+})
 
 
 </script>
