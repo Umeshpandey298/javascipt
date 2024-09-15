@@ -14,7 +14,7 @@
 </body>
 <script>
   // generate a rendom color
-  let colorGame
+  
 
   const randomColor=function(){
     const hex="0123456789ABCDEF"
@@ -30,14 +30,16 @@
     document.body.style.backgroundColor= randomColor()
   }
 
+  // let colorGame=randomColor()
+  let colorGame
    document.getElementById('start').addEventListener('click', function(){
-    if(!colorGame){
-      colorGame= setInterval(changeBgColor,2000);
-      console.log("the color changing is starting")
+    // if(!colorGame){
+    //   colorGame= setInterval(changeBgColor,500);
+    //   console.log("the color changing is starting")
 
-    }
-    // colorGame= setInterval(changeBgColor,2000);
-    // console.log("the color changing is starting")
+    // }
+    colorGame= setInterval(changeBgColor,500);
+    console.log("the color changing is starting")
 
   })
   document.getElementById('stop').addEventListener('click', function(){
@@ -47,7 +49,7 @@
 
   })
 
-  // setIntervel(changecolor,2000);
+  // setIntervel(changecolor,500);
 
   
   
