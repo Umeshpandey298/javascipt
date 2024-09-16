@@ -113,3 +113,11 @@ fetch('https://randomuser.me/api/')
 })
 .catch((err)=>console.log(err)
 )
+
+
+
+
+
+
+
+
